@@ -46,7 +46,7 @@ $databases['default']['default'] = array(
   'prefix' => '',
 );
 
-$database['wordpress']['default'] = array(
+$databases['wordpress']['default'] = array(
   'driver' => 'mysql',
   'database' => 'your_wordpress_db_name',
   'username' => 'db_user',
