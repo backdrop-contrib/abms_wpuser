@@ -1,17 +1,17 @@
-# Acuity WordPress User Import
+# WordPress User Import (Acuity)
 Connects a Backdrop CMS installation to a legacy WordPress database to migrate user accounts and metadata.
 
 This module is designed to be an idempotent migration tool: it can be run multiple times to sync changes from WordPress to Backdrop, updating existing users and creating new ones as needed.
 
 When all users have been imported and/or your new backdrop site is live, you can safely uninstall this module.
 
-To manipulate the user accounts we recommend using the **Views Bulk Operations** module, for example, to change the user role from the standard *Authenticated* to a custom role you may have created, or update an email or newsletter subscription status.
+To manipulate the user accounts, we recommend using the **Views Bulk Operations** module, for example, to change the user role from the standard *Authenticated* to a custom role you may have created, or update an email or newsletter subscription status.
 
-We recommend deleteing any unneeded fields we created for the import process once you are happy with the imported data.
+We recommend deleting any unneeded fields we created for the import process once you are happy with the imported data.
 
 ## Initial version
 
-This is an beta release for code review and testing.
+This is a beta release for code review and testing.
 
 ### Compatibility notes:
 This module is a utility intended for migration purposes. It is designed to work in tandem with Acuity Auth Handler (abms_auth) to allow migrated users to log in using their legacy passwords.
@@ -96,7 +96,7 @@ The module automatically creates hidden fields to store legacy data.
 
 ### Field Access
 
-Technical fields (field_wp_guid, field_wp_capabilities, field_wp_user_level) are restricted via *hook_field_access()*. Only administrators with administer users permission can view or edit these fields.
+Technical fields (field_wp_guid, field_wp_capabilities, field_wp_user_level) are restricted via *hook_field_access()*. Only administrators with the administer users permission can view or edit these fields.
 
 ### Silent Import
 
