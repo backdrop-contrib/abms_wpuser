@@ -1,4 +1,5 @@
 # WordPress User Import (Acuity)
+## This module has been replaced with https://github.com/backdrop-contrib/acuity_wpmc and https://github.com/backdrop-contrib/acuity_wpuser
 Connects a Backdrop CMS installation to a legacy WordPress database to migrate user accounts and metadata.
 
 This module is designed to be an idempotent migration tool: it can be run multiple times to sync changes from WordPress to Backdrop, updating existing users and creating new ones as needed.
